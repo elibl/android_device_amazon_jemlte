@@ -16,9 +16,13 @@ $(call inherit-product, device/amazon/jem/device.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/amazon/jemlte/overlay
 
+# RIL settings
+PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libpath=/system/lib/libril-lab126qmi.so
+
 # LTE changes
 PRODUCT_COPY_FILES += \
-    device/amazon/jem/apns-conf.xml:/system/etc/apns-conf.xml \
+    device/amazon/jemlte/apns-conf.xml:/system/etc/apns-conf.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 $(call inherit-product-if-exists, vendor/amazon/jemlte/jemlte-vendor.mk)
