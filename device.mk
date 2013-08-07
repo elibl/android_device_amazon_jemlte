@@ -12,17 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+DEVICE_PACKAGE_OVERLAYS += device/amazon/jemlte/overlay
+
 $(call inherit-product, device/amazon/jem/device.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/amazon/jemlte/overlay
+# rild
+PRODUCT_PACKAGES += \
+    rild \
+    BasicSmsReceiver
 
 # RIL settings
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/system/lib/libril-lab126qmi.so
+    rild.libpath=/system/lib/libril-lab126qmi.so \
+    keyguard.no_require_sim=true
 
 # LTE changes
 PRODUCT_COPY_FILES += \
-    device/amazon/jemlte/apns-conf.xml:/system/etc/apns-conf.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 $(call inherit-product-if-exists, vendor/amazon/jemlte/jemlte-vendor.mk)
