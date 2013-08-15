@@ -24,12 +24,13 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
-# Inherit from those products. Most specific first.
+# Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-$(call inherit-product, device/amazon/jemlte/device.mk)
 
 PRODUCT_NAME := full_jemlte
 PRODUCT_DEVICE := jemlte
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Kindle Fire HD LTE
 PRODUCT_MANUFACTURER := amazon
+
+$(call inherit-product, device/amazon/jemlte/device.mk)
