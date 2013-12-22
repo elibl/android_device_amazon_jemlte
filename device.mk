@@ -24,7 +24,9 @@ PRODUCT_PACKAGES += \
 # RIL settings
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-lab126qmi.so \
-    keyguard.no_require_sim=true
+    keyguard.no_require_sim=true \
+    telephony.lteOnGsmDevice=1 \
+    ro.telephony.default_network=9
 
 # LTE changes
 PRODUCT_COPY_FILES += \

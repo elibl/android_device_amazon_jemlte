@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := device/amazon/jemlte/full_jemlte.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_jemlte.mk

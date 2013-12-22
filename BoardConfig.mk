@@ -15,12 +15,6 @@
 # inherit from jem-common
 -include device/amazon/jem/BoardConfig.mk
 
-# inherit from common
--include device/amazon/bowser-common/BoardConfigCommon.mk
-
-# inherit from the proprietary version
--include vendor/amazon/jem/BoardConfigVendor.mk
-
 # hack the ota
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/amazon/jemlte/releasetools/bowser_ota_from_target_files
 TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/amazon/jemlte/releasetools/bowser_img_from_target_files
