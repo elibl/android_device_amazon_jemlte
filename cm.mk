@@ -22,7 +22,8 @@ $(call inherit-product, vendor/cm/config/telephony.mk)
 $(call inherit-product, device/amazon/jemlte/full_jemlte.mk)
 $(call inherit-product, device/amazon/bowser-common/cm.mk)
 
-TARGET_SCREEN_WIDTH := 1920
+#TARGET_SCREEN_WIDTH := 1920
+TARGET_SCREEN_WIDTH := 480
 TARGET_SCREEN_HEIGHT := 1200
 
 PRODUCT_NAME := cm_jemlte
