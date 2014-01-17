@@ -31,6 +31,6 @@ PRODUCT_NAME := full_jemlte
 PRODUCT_DEVICE := jemlte
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Kindle Fire HD LTE
-PRODUCT_MANUFACTURER := amazon
+PRODUCT_MANUFACTURER := android
 
 $(call inherit-product, device/amazon/jemlte/device.mk)
