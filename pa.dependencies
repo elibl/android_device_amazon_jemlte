@@ -1,12 +1,6 @@
 [
   {
     "remote":       "github",
-    "repository":   "AOSPA-legacy/android_device_amazon_jem",
-    "target_path":  "device/amazon/jem"
-    "revision":	    "kitkat"
-  },
-  {
-    "remote":       "github",
     "repository":   "KFire-Android/android_device_amazon_bowser-common",  
     "target_path":  "device/amazon/bowser-common",
     "revision":	    "cm-11.0"
