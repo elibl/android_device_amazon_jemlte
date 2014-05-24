@@ -17,7 +17,7 @@
   },
   {
     "remote":       "github",
-    "repository":   "KFire-Android/kernel_omap_bowser-common",
+    "repository":   "CyanogenMod/android_kernel_amazon_bowser-common",
     "target_path":  "kernel/amazon/bowser-common",
     "revision":	    "cm-11.0"
   },
